@@ -9,8 +9,11 @@
     --primary-clr: #14213d;
     --white-clr: #fff;
 }
-body {
+body, html {
     font-family: var(--main-ff);
+    height: 800vh;
+    scroll-behavior: smooth;
+    position: relative;
 }
 
 /* utility classes & element*/
@@ -21,6 +24,9 @@ body {
 .d-flex {
     display: flex;
 }
+.d-none {
+    display: none;
+}
 .items-center {
     align-items: center;
 }
@@ -29,6 +35,12 @@ body {
 }
 .space-btwn {
     justify-content: space-between;
+}
+.direction-clmn {
+    flex-direction: column;
+}
+.flex-grow {
+    flex-grow: 1;
 }
 .wrap {
     flex-wrap: wrap;
@@ -39,8 +51,25 @@ body {
 img {
     max-width: 100%;
 }
+h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
 
 /* End of classes & element */
+
+#cart-msg {
+    background-color: crimson;
+    color: var(--white-clr);
+    font-size: 1.2rem;
+    position: fixed;
+    right: 0;
+    top: 8rem;
+    padding: 1rem;
+    transition: all .4s ease-in-out;
+}
 
 nav {
     padding: 0.5rem 0 0.5rem 0;
@@ -74,15 +103,76 @@ nav .cart a .items-count {
     background-color: crimson;
     border-radius: 100%;
     color: var(--white-clr);
-    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: absolute;
     right: 0;
     height: 27px;
     width: 27px;
+    visibility: hidden;
 }
 
-.products h2 {
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: px;
+.products-container {
+    margin-top: 8rem;
+    gap: 2rem;
+}
+.products-container .products-card {
+    margin-bottom: 4rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+
+}
+.products-container .products-card .product-details {
+    padding-inline: .5rem;
+    margin-top: 1.2rem;
+}
+.products-container .products-card .product-details h4 {
+    color: var(--primary-clr);
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.products-container .products-card .product-details .price-cta {
+    margin: 1rem 0 2.5rem 0;
+}
+.products-container .products-card .product-details .price-cta span {
+    color: var(--primary-clr);
+    font-size: 1.8rem;
+}
+.products-container .products-card .product-details .price-cta button {
+    background-color: transparent;
+    border: 1px solid var(--primary-clr);
+    color: var(--primary-clr);
+    cursor: pointer;
+    font-family: var(--main-ff);
+    font-size: 1.1rem;
+    padding: .5rem 1.3rem .5rem 1.3rem;
+    transition: all .5s ease-in-out;
+}
+.products-container .products-card .product-details .price-cta button:hover {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+}
+.products-container .products-card .product-details .buy {
+    background-color: var(--primary-clr);
+    border: none;
+    color: var(--white-clr);
+    cursor: pointer;
+    font-family: var(--main-ff);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: .5rem 1.3rem .5rem 1.3rem;
+    width: 100%;
+    transition: all .5s ease-in-out;
+}
+.products-container .products-card .product-details .buy:hover {
+    background-color: var(--white-clr);
+    border: 1px solid var(--primary-clr);
+    color: var(--primary-clr);
+}
+
+.about .wrapper {
+    gap: 1rem;
+    margin-top: 5rem;
 }

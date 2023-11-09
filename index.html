@@ -10,13 +10,14 @@
     <title>Shopping Cart</title>
 </head>
 <body>
-    <header>
+    <div id="cart-msg" class="d-none">Your item is in the cart</div>
+    <header id="home">
         <div class="container">
             <nav class="d-flex items-center space-btwn">
                 <div class="logo"><a href="#">Shop<span>.</span></a></div>
                 <ul class="d-flex items-center">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Collections</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#collections">Collections</a></li>
                     <li><a href="">About</a></li>
                     <li><a href="">Contact</a></li>
                 </ul>
@@ -32,18 +33,71 @@
     <section class="hero m-bottom">
         <img src="imgs/hero.jpg" alt="">
     </section>
-    <section class="products">
+    <section id="collections" class="products m-bottom">
         <div class="container">
-            <h2>All the products</h2>
-            <div class="products-container d-flex">
+            <h2>All The Collections</h2>
+            <div class="products-container d-flex wrap">
                 <div class="products-card">
                     <img src="/imgs/product-item1.jpg" alt="">
-                    <h4>Product Name</h4>
-                    <div class="price-cta">
-                        <span>12$</span>
-                        <button class="add-to-cart">Add to cart</button>
+                    <div class="product-details">
+                        <h4 class="product-title">Flower Dress</h4>
+                        <div class="price-cta d-flex space-btwn items-center">
+                            <span class="price">9$</span>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                        <button class="buy">Buy Now</button>
                     </div>
-                    <button class="buy">Buy Now</button>
+                </div>
+                <div class="products-card">
+                    <img src="/imgs/product-item2.jpg" alt="">
+                    <div class="product-details">
+                        <h4 class="product-title">Women's Jacket</h4>
+                        <div class="price-cta d-flex space-btwn items-center">
+                            <span class="price">16$</span>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img src="/imgs/product-item3.jpg" alt="">
+                    <div class="product-details">
+                        <h4 class="product-title">Men's Hat</h4>
+                        <div class="price-cta d-flex space-btwn items-center">
+                            <span class="price">18$</span>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+                <div class="products-card">
+                    <img src="/imgs/product-item24.jpg" alt="">
+                    <div class="product-details">
+                        <h4 class="product-title">Women's Jean</h4>
+                        <div class="price-cta d-flex space-btwn items-center">
+                            <span class="price">22$</span>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                        <button class="buy">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="about m-bottom">
+        <div class="container">
+            <h2 id="about-us">Our Story</h2>
+            <div class="wrapper d-flex space-btwn">
+                <div class="about-img">
+                    <img src="imgs/about-3d.jpg" alt="">
+                </div>
+                <div class="texts">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque doloribus quibusdam odio voluptas suscipit dolor quas quis minus! Illo voluptatibus, deleniti magni possimus assumenda inventore soluta eius delectus aspernatur quibusdam!
+                    Nam ullam ut itaque eligendi repellendus, vitae officia similique eius nesciunt sint ratione atque cum id a, facere porro architecto. Adipisci consectetur, facilis voluptatum quaerat enim optio fugiat unde! Nam.
+                    Blanditiis deleniti quidem nihil excepturi? Harum quos quam laboriosam incidunt, animi cupiditate blanditiis natus quas ipsum accusantium sit dolore ducimus doloremque totam dicta! In dolorum earum, deleniti placeat nisi quae.</p>
                 </div>
             </div>
         </div>
