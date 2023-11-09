@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --main-ff: 'Poppins', sans-serif;
+    --primary-clr: #14213d;
+    --white-clr: #fff;
+}
+body {
+    font-family: var(--main-ff);
+}
+
+/* utility classes & element*/
+.container {
+    padding-inline: 8rem;
+    margin: 0 auto;
+}
+.d-flex {
+    display: flex;
+}
+.items-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.space-btwn {
+    justify-content: space-between;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.m-bottom {
+    margin-bottom: 6rem;
+}
+img {
+    max-width: 100%;
+}
+
+/* End of classes & element */
+
+nav {
+    padding: 0.5rem 0 0.5rem 0;
+}
+nav .logo a {
+    color: var(--primary-clr);
+    cursor: pointer;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+nav .logo a span {
+    font-size: 4rem;
+}
+nav ul {
+    list-style: none;
+    gap: 3rem;
+}
+nav ul li a {
+    color: var(--primary-clr);
+    text-decoration: none;
+    font-size: 1.4rem;
+}
+nav .cart {
+    position: relative;
+}
+nav .cart a {
+   color: var(--primary-clr);
+}
+nav .cart a .items-count {
+    background-color: crimson;
+    border-radius: 100%;
+    color: var(--white-clr);
+    display: none;
+    position: absolute;
+    right: 0;
+    height: 27px;
+    width: 27px;
+}
+
+.products h2 {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: px;
+}
