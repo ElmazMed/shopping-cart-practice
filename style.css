@@ -11,7 +11,7 @@
 }
 body, html {
     font-family: var(--main-ff);
-    height: 800vh;
+    color: var(--primary-clr);
     scroll-behavior: smooth;
     position: relative;
 }
@@ -70,7 +70,12 @@ h2 {
     padding: 1rem;
     transition: all .4s ease-in-out;
 }
-
+header{
+    background-color: white;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    position: fixed;
+    width: 100%;
+}
 nav {
     padding: 0.5rem 0 0.5rem 0;
 }
@@ -175,4 +180,105 @@ nav .cart a .items-count {
 .about .wrapper {
     gap: 1rem;
     margin-top: 5rem;
+}
+.about .about-img img {
+    border-top-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+    height: 70%;
+}
+.about .texts {
+    padding-right: 7rem;
+    margin-top: 4rem;
+}
+.about .texts h3 {
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+}
+.about .texts p {
+    line-height: 2.5;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+#contact-us .contact-wrapper {
+    margin-top: 5rem;
+}
+#contact-us .contact-infos {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    padding: 2rem;
+    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.1);
+}
+#contact-us .contact-infos .contact-texts {
+    margin-bottom: 5rem;
+}
+#contact-us .contact-infos .contact-texts h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+#contact-us .contact-infos .contact-texts p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 1rem;
+}
+#contact-us .contact-infos .contact-details p {
+    font-size: 1.2rem;
+    font-weight: 200;
+    margin-bottom: 3rem;
+}
+#contact-us .contact-form {
+    background-color: var(--white-clr);
+    box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.1);
+    padding: 2rem;
+}
+#contact-us .contact-form form label {
+    font-size: 1.2rem;
+    margin-bottom: .7rem;
+    margin-left: 1.5rem;
+}
+#contact-us .contact-form form input, textarea {
+    border: none;
+    border-bottom: 1px solid #bcbaba;
+    font-size: 1.2rem;
+    font-family: var(--main-ff);
+    padding: .8rem .5rem;
+    margin: .2rem 0 2.3rem 1rem;
+    outline: none;
+}
+#contact-us .contact-form form textarea {
+    resize: vertical;
+}
+#contact-us .contact-form form button {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-family: var(--main-ff);
+    padding: .8rem 1.7rem;
+    margin-left: 1rem;
+    width: 30%;
+}
+
+footer {
+    background-color: var(--primary-clr);
+    color: var(--white-clr);
+    text-align: center;
+    padding: 1rem;
+}
+footer h4 {
+    font-size: 1.6rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+}
+footer .icons {
+    margin-bottom: 1.1rem;
+}
+footer .icons a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    margin-left: 1rem;
+}
+footer a{
+    color: white;
 }
