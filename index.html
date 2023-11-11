@@ -11,6 +11,43 @@
 </head>
 <body>
     <div id="cart-msg" class="d-none">Your item is in the cart</div>
+
+    <div id="cart-container" class="">
+        <div class="cart-product d-flex items-center direction-clmn gap-2">
+            <div class="remove-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m7 7l10 10M7 17L17 7"/></svg>
+            </div>
+            <div class="cart-item-img d-flex justify-center">
+                <img src="/imgs/product-item1.jpg" alt="">
+            </div>
+            <div class="d-flex items-center direction-clmn gap-2">
+                <h5>Flower Dress</h5>
+                <div class="d-flex justify-center gap-2">
+                    <span>19$</span>
+                    <input type="number" name="quantity" value="1" id="quantity">
+                </div>
+            </div>
+        </div>
+        <div class="total-cta d-flex">
+            <span class="total">19.99$</span>
+            <button class="checkout">Checkout</button>
+        </div>
+    </div>
+
+    <div class="nl-overlay d-none">
+        <div class="nl-container d-flex justify-center items-center">
+            <div class="right-side d-flex direction-clmn items-center">
+                <div class="nl-texts">
+                    <h4>50% Discount on your subscription</h4>
+                    <p>Subscribe now and be the first to get all our <br> Hot Deals!</p>
+                </div>
+                <form action="" id="nl-form" class="d-flex direction-clmn">
+                    <input type="email" name="email" id="nl-mail" placeholder="Enter your email here">
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </div>
     <header>
         <div class="container">
             <nav class="d-flex items-center space-btwn">
