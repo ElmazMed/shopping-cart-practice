@@ -11,27 +11,15 @@
 </head>
 <body>
     <div id="cart-msg" class="d-none">Your item is in the cart</div>
+    <!-- Here Where the cart container starts -->
+    
+    <div class="cart-container d-none">
 
-    <div id="cart-container" class="">
-        <div class="cart-product d-flex items-center direction-clmn gap-2">
-            <div class="remove-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" d="m7 7l10 10M7 17L17 7"/></svg>
-            </div>
-            <div class="cart-item-img d-flex justify-center">
-                <img src="/imgs/product-item1.jpg" alt="">
-            </div>
-            <div class="d-flex items-center direction-clmn gap-2">
-                <h5>Flower Dress</h5>
-                <div class="d-flex justify-center gap-2">
-                    <span>19$</span>
-                    <input type="number" name="quantity" value="1" id="quantity">
-                </div>
-            </div>
-        </div>
-        <div class="total-cta d-flex">
-            <span class="total">19.99$</span>
+        <div class="total-cta d-flex items-center wrap">
+            <span class="total">$ 0.00</span>
             <button class="checkout">Checkout</button>
         </div>
+
     </div>
 
     <div class="nl-overlay d-none">
@@ -76,44 +64,44 @@
                 <h2>All The Collections</h2>
                 <div class="products-container d-flex wrap">
                     <div class="products-card">
-                        <img src="/imgs/product-item1.jpg" alt="">
+                        <img class="product-img" src="/imgs/product-item1.jpg" alt="">
                         <div class="product-details">
                             <h4 class="product-title">Flower Dress</h4>
                             <div class="price-cta d-flex space-btwn items-center">
-                                <span class="price">9$</span>
+                                <span class="price">$9.99</span>
                                 <button class="add-to-cart">Add to cart</button>
                             </div>
                             <button class="buy">Buy Now</button>
                         </div>
                     </div>
                     <div class="products-card">
-                        <img src="/imgs/product-item2.jpg" alt="">
+                        <img class="product-img" src="/imgs/product-item2.jpg" alt="">
                         <div class="product-details">
                             <h4 class="product-title">Women's Jacket</h4>
                             <div class="price-cta d-flex space-btwn items-center">
-                                <span class="price">16$</span>
+                                <span class="price">$16.99</span>
                                 <button class="add-to-cart">Add to cart</button>
                             </div>
                             <button class="buy">Buy Now</button>
                         </div>
                     </div>
                     <div class="products-card">
-                        <img src="/imgs/product-item3.jpg" alt="">
+                        <img class="product-img" src="/imgs/product-item3.jpg" alt="">
                         <div class="product-details">
                             <h4 class="product-title">Men's Hat</h4>
                             <div class="price-cta d-flex space-btwn items-center">
-                                <span class="price">18$</span>
+                                <span class="price">$18.99</span>
                                 <button class="add-to-cart">Add to cart</button>
                             </div>
                             <button class="buy">Buy Now</button>
                         </div>
                     </div>
                     <div class="products-card">
-                        <img src="/imgs/product-item24.jpg" alt="">
+                        <img class="product-img" src="/imgs/product-item24.jpg" alt="">
                         <div class="product-details">
                             <h4 class="product-title">Women's Jean</h4>
                             <div class="price-cta d-flex space-btwn items-center">
-                                <span class="price">22$</span>
+                                <span class="price">$22.99</span>
                                 <button class="add-to-cart">Add to cart</button>
                             </div>
                             <button class="buy">Buy Now</button>
@@ -200,6 +188,7 @@
             </div>
         </div>
     </footer>
+    <script src="products.js"></script>
     <script src="script.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
