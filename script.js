@@ -7,8 +7,6 @@ cartIcon.addEventListener('click', (e) => {
 })
 
 
-
-
 let addToCart = document.getElementsByClassName('add-to-cart')
 
 for(let i = 0; i < addToCart.length; i++) {
@@ -26,6 +24,7 @@ function addItem(e) {
 
     itemsAdded(cartProductTitle, productImage, productPrice)
     updateCartTotal()
+
 }
 
 
@@ -78,10 +77,31 @@ function itemsAdded(cartProductTitle, productImage, productPrice) {
     quantityInput.addEventListener('change', quantityChange)
 
 }
+    counterCart()
+    showCartMsg()
+
+    setTimeout(function hideCartMsg() {
+        cartMsg.classList.add('d-none')
+    }, 3000)
 
 }
+//This function used to show how many items you have in the cart
+let itemsCartCounter = document.getElementsByClassName('items-count')[0]
+
+function counterCart() {
+    itemsCartCounter.style.visibility = 'visible'
+    itemsCartCounter.innerText = cartContainer.children.length - 1
+}
+
+//This function is for calling the msg of the shopping cart
+    let cartMsg = document.getElementsByClassName('cart-msg')[0]
+    
+    function showCartMsg() {
+        cartMsg.classList.remove('d-none')
+    }
 
 
+//This function is for making the value of the input 1 or more
 function quantityChange(e) {
     let quantityInput = e.target
     if(isNaN(quantityInput.value) || quantityInput.value <= 0) {
@@ -90,6 +110,7 @@ function quantityChange(e) {
     updateCartTotal()
 }
 
+//This function used to update the total price of the cart if I increase the quantity or add more products
 function updateCartTotal() {
     let cartContainer = document.getElementsByClassName('cart-container')[0]
     let cartProducts = cartContainer.getElementsByClassName('cart-product')

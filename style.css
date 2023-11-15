@@ -78,14 +78,13 @@ input, textarea {
 }
 
 /* End of classes & element */
-
-#cart-msg {
-    background-color: crimson;
+.cart-msg {
+    background-color: #ed143db8;
     color: var(--white-clr);
     font-size: 1.2rem;
     position: fixed;
     right: 0;
-    top: 8rem;
+    top: 25rem;
     padding: 1rem;
     transition: all .4s ease-in-out;
 }
