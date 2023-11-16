@@ -3,7 +3,7 @@ let cartContainer = document.getElementsByClassName('cart-container')[0]
 
 cartIcon.addEventListener('click', (e) => {
     e.preventDefault()
-    cartContainer.classList.toggle('d-none')
+    cartContainer.classList.toggle('cart-open-close')
 })
 
 
@@ -67,6 +67,7 @@ function itemsAdded(cartProductTitle, productImage, productPrice) {
             btn.parentElement.remove()
 
             updateCartTotal()
+            counterCart()
         })
     }
     let inputQuantity = document.getElementsByClassName('quantity')
@@ -129,4 +130,19 @@ function updateCartTotal() {
     }
 
     document.getElementsByClassName('total')[0].innerText = '$ ' + total.toFixed(2)
+}
+
+//Here the responsive navigation for mobile
+
+let mobileMenuIcon = document.getElementsByClassName('mobile-menu-icon')[0]
+let mobileMenuBackground = document.getElementsByClassName('mobile-menu-background')[0]
+let navLinks = document.getElementsByClassName('nav-links')[0]
+
+mobileMenuIcon.addEventListener('click', showMenu)
+
+function showMenu() {
+    mobileMenuBackground.classList.toggle('d-none')
+    
+    navLinks.classList.toggle('dis-none')
+
 }
